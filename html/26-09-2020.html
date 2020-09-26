@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atributos globales</title>
+  </head>
+  <body>
+    <h1>Estos son atributos globales</h1>
+
+    <form>
+      <label for="fname">Nombre</label><br />
+      <input
+        data-test="name"
+        id="fname"
+        type="text"
+        name="fname"
+        placeholder="Jon"
+      />
+      <br />
+      <label for="lname">Apellidos</label><br />
+      <input
+        data-test="surname"
+        id="lname"
+        type="text"
+        name="lname"
+        placeholder="Snow"
+      />
+      <br />
+      <!-- <label for="dni">DNI</label><br /> -->
+      <input
+        hidden
+        id="dni"
+        type="text"
+        name="dni"
+        value="12345678A"
+        readonly
+      />
+      <br />
+      <!-- Con tabindex -1 quitamos el focus de teclado en el botón -->
+      <button tabindex="-1" title="Soy un título" type="button">Ejemplo</button>
+      <input type="submit" value="Enviar datos" />
+    </form>
+  </body>
+</html>

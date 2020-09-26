@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase de formularios 22 Septiembre</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      .title {
+        color: blueviolet;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Clase de formularios</h1>
+    <form>
+      <!-- El atributo for="" lleva el mismo nombre que los atributos
+      name e id del input -->
+      <label for="first-name">¿Cuál es tu nombre?</label><br />
+      <input
+        type="text"
+        name="first-name"
+        id="first-name"
+        placeholder="Jon"
+        required
+      />
+
+      <br />
+
+      <label for="surname">¿Cuál es tu apellido?</label><br />
+      <input
+        type="text"
+        name="surname"
+        id="surname"
+        required
+        placeholder="Snow"
+      />
+
+      <br />
+
+      <label for="houses">¿Cuántas casas tienes?</label><br />
+      <input type="number" name="houses" id="houses" placeholder="10" />
+
+      <br />
+
+      <label for="house-picture">Sube una foto de tu casa</label><br />
+      <input type="file" name="house-picture" id="house-picture" />
+
+      <br />
+
+      <label for="house-date">¿Cuándo compraste tu casa?</label><br />
+      <input type="date" name="house-date" id="house-date" required />
+
+      <br />
+      <fieldset>
+        <legend>¿Qué edad tienes?</legend>
+        <input type="radio" id="less-18" name="age" value="<18" />
+        <label for="less-18">Tengo menos de 18 años</label>
+        <br />
+        <input type="radio" id="18-to-30" name="age1" value="18~30" />
+        <label for="18-to-30">Tengo más de 18 años y menos de 30</label>
+        <br />
+        <input type="radio" id="more-30" name="age2" value=">30" />
+        <label for="more-30">Tengo más de 30 años</label>
+      </fieldset>
+
+      <br />
+
+      <!-- <input type="checkbox" /> -->
+
+      <!-- La id va a juego con el atributo for para relacionar label e input
+      El name es un identificador único para el valor de este checkbox
+      Y el value es el valor que obtenemos en el formulario -->
+      <p>¿Qué vehículo tienes?</p>
+      <input type="checkbox" id="coche" name="coche" value="coche" />
+      <label for="coche">Tengo un coche</label>
+      <br />
+      <input type="checkbox" id="moto" name="moto" value="moto" />
+      <label for="moto">Tengo una moto</label>
+      <br />
+      <input type="checkbox" id="caballo" name="caballo" value="caballo" />
+      <label for="caballo">Tengo un caballo</label>
+
+      <br />
+
+      <label for="marca-vehiculo">¿De qué marca es tu vehículo?</label>
+      <!-- El atributo size="2" cambia el desplegable para que veamos las opciones por defecto y hagamos scroll dentro -->
+      <!-- El atributo multiple permite elegir varias opciones usando shift -->
+      <select id="marca-vehiculo" name="marca-vehiculo">
+        <option value="" selected>Selecciona tu marca</option>
+        <option value="suzuki">Suzuki</option>
+        <option value="seat">Seat</option>
+        <option value="opel">Opel</option>
+      </select>
+
+      <br />
+
+      <label for="description">Cuéntanos sobre ti</label><br />
+      <textarea
+        name="description"
+        id="description"
+        rows="10"
+        cols="50"
+      ></textarea>
+
+      <br />
+
+      <!-- Un datalist es como un select pero que permite escribir dentro y
+      recomienda opciones -->
+      <label for="navegadores">Navegadores</label>
+      <!-- El atributo list relaciona el input de texto con las opciones disponibles -->
+      <input list="navegadores" />
+      <datalist id="navegadores">
+        <option value="Internet Explorer"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+
+      <br />
+
+      <!-- Un form puede tener un botón de tipo submit 
+      y tantos tipo button como queramos -->
+      <!-- En el caso de los botones, el campo value se usa solamente como decoración -->
+      <input type="submit" value="Enviar mis datos 🦄 " />
+
+      <!-- <input type="button" value="Hola hola" /> -->
+    </form>
+  </body>
+</html>
