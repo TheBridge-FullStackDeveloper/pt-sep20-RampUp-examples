@@ -1,0 +1,149 @@
+/* En esta situación, donde queremos pisar los estilos por defecto de HTML
+tiene todo el sentido usar los selectores de elementos HTML y no clases o ids. */
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button,
+input,
+textarea {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.custom-link {
+  color: #24272b;
+}
+
+a {
+  color: green;
+}
+
+#custom-link {
+  color: #fcaa67;
+}
+
+/* ⬇️ Esto es mala práctica porque pisamos todos los h1, h3 y p de nuestra web */
+/* h1 {
+  color: red;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+  color: purple;
+} */
+
+/* Seleccionamos las clases usando un .NOMBRE */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.red {
+  color: #ff674d;
+}
+
+.purple {
+  color: #7776bc;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.main-section h3 {
+  color: blue;
+}
+
+.main-section p {
+  color: yellow;
+}
+
+.personal-form label {
+  font-weight: bold;
+}
+
+.personal-form input {
+  font-size: 24px;
+}
+
+#surname {
+  text-transform: uppercase;
+  color: #3e78b2;
+}
+
+.personal-form .red {
+  color: #883955;
+}
+
+/* ID >>>> CLASS >>>> SELECTOR HTML + (ABAJO >>>> ARRIBA) */
+
+#example-text {
+  /* Usamos colores con el nombre del color */
+  /* color: red;
+  color: blue;
+  color: white;
+  color: purple;
+  color: peru; */
+
+  /* Usamos colores con HEX */
+  /* Los primeros dos números o letras son Rojo
+  Los segundos dos números o letras son Verde
+  Los terceros dos números o letras son Ázul */
+  /* color: #000000; */
+  /* color: #ff0000;
+  color: #00ff00;
+  color: #0000ff; */
+  /* Los dos números del final son la opacidad */
+  color: #035803fa;
+
+  /* Usamos colores en RGB (Red, Green, Blue). 
+  Van de 0 (más oscuro) a 255 (más claro) */
+  /* color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+
+  color: rgb(255, 0, 0);
+  color: rgb(0, 255, 0);
+  color: rgb(0, 0, 255);
+  color: rgba(0, 0, 255, 1); */
+  color: rgba(255, 255, 255, 0.7);
+
+  background-color: rgb(0, 0, 0);
+  /* Esto es el tamaño del interlineado */
+  line-height: 3;
+}
+
+#cool-input {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos aplicados a textos */
+/* font-family => Cambia la tipografía de la letra
+font-size => Cambia el tamaño de la letra
+font-weight => Cambia el peso de la letra (negrita) */
+
+.cool-typography {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.line-0 {
+  line-height: 0;
+}

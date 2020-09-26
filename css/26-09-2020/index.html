@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Clase 1</title>
+    <!-- Cargamos el CSS en el HTML usando un link -->
+    <!-- ./ significa "EN LA MISMA CARPETA" -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Esto se trae la fuente de google -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+    <!-- Al archivo CSS me llevo el contenido de la etiqueta <style></style> -->
+    <!-- <style>
+    h1 {
+      color: red;
+    }
+  </style> -->
+  </head>
+  <body>
+    <h1>CSS Clase 1</h1>
+
+    <nav>
+      <a href="http://google.es" target="_blank" rel="noopener noreferrer"
+        >Google</a
+      >
+      <a href="http://google.es" target="_blank" rel="noopener noreferrer"
+        >Facebook</a
+      >
+      <a
+        id="custom-link"
+        class="custom-link"
+        href="http://google.es"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Twitter</a
+      >
+    </nav>
+
+    <section>
+      <!-- Usando espacios añado tantas clases como quiero -->
+      <h3 class="uppercase red">Esta es una sección</h3>
+      <!-- Las clases desde el CSS se pisan en orden de escritura (Manda la que esté abajo) -->
+      <p class="purple red">Este es el texto contenido en la sección</p>
+    </section>
+
+    <!-- Aquí aplicamos clases desde section a sus elementos hijos -->
+    <section class="purple lowercase main-section">
+      <h3>Esta es otra sección</h3>
+      <p>Este es el texto contenido en la otra sección</p>
+    </section>
+
+    <button>Este es un texto en un botón</button>
+
+    <br />
+    <br />
+    <div>
+      <label class="purple cool-typography" for="dog"
+        >¿Cómo se llama tu perro?</label
+      >
+      <br />
+      <input id="cool-input" type="text" name="dog" id="dog" />
+    </div>
+    <br />
+
+    <p id="example-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget
+      accumsan dolor, et suscipit lorem. In consectetur nibh dui, et laoreet
+      metus vehicula eget. Nulla nec pulvinar orci, a aliquet eros. Aliquam
+      cursus ligula et tincidunt vulputate. Curabitur imperdiet, arcu sed mollis
+      facilisis, metus velit sodales arcu, eu condimentum sapien lorem sed elit.
+      Nullam convallis ultrices nibh et vulputate. Donec luctus elit dui, et
+      convallis lorem lacinia sed.
+    </p>
+
+    <div>
+      <h3>Alineamos texto ⬇️</h3>
+      <p class="text-right">Lorem ipsum dolor sit amet.</p>
+      <p class="text-center">Lorem ipsum dolor sit amet.</p>
+      <p class="text-left">Lorem ipsum dolor sit amet.</p>
+      <p class="text-left">Lorem ipsum dolor sit amet.</p>
+      <p class="text-center">Lorem ipsum dolor sit amet.</p>
+      <p class="text-right">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <form class="personal-form">
+      <label for="name">Tu nombre</label>
+      <br />
+      <input id="name" type="text" />
+
+      <br />
+
+      <label for="surname">Tu primer apellido</label>
+      <br />
+      <input id="surname" type="text" class="red" />
+
+      <br />
+
+      <label for="age">Tu edad</label>
+      <br />
+      <input id="age" type="number" />
+    </form>
+
+    <section>
+      <h3>Alineamos una imagen con texto</h3>
+
+      <div class="text-right">
+        <img src="./assets/gustavo.png" alt="Gustavo" width="200" />
+        <span>Este bicho se llama Gustavo</span>
+      </div>
+
+      <div class="text-center">
+        <img src="./assets/gustavo.png" alt="Gustavo" width="200" />
+        <span>Este bicho se llama Gustavo</span>
+      </div>
+
+      <div>
+        <img src="./assets/gustavo.png" alt="Gustavo" width="200" />
+        <span>Este bicho se llama Gustavo</span>
+      </div>
+
+      <div>
+        <img src="./assets/gustavo.png" alt="Gustavo" width="200" />
+        <p class="line-0">Este bicho se llama Gustavo</p>
+      </div>
+
+      <h2>⬇️ Esto está aquí para separar el fondo de la página ⬇️</h2>
+    </section>
+  </body>
+</html>
