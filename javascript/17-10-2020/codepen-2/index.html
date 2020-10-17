@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="pokemon-form">
+      <label for="pokemon-input">¿Cuál es tu pokemon favorito?</label>
+      <input id="pokemon-input" name="favorite-pokemon" type="text" required />
+
+      <label for="pokemon-number">¿De qué nivel es tu pokemon?</label>
+      <input
+        id="pokemon-number"
+        name="pokemon-level"
+        type="number"
+        min="1"
+        required
+      />
+
+      <button type="submit">Enviar respuesta 🎉</button>
+    </form>
+
+    <h3 id="pokemon-name"></h3>
+
+    <button id="click-me">Clicka y mira el log!</button>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

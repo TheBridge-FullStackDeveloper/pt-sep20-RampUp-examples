@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="burguer-menu">
+      <label for="client-name">Tu nombre:</label>
+      <input
+        type="text"
+        id="client-name"
+        required
+        placeholder="Mi nombre es..."
+      />
+
+      <label for="burguer-type">Tipo de hamburguesa:</label>
+      <select id="burguer-type" required>
+        <option value="" selected>Selecciona una burguer</option>
+        <option value="simple">Burguer simple</option>
+        <option value="doble">Burguer doble</option>
+        <option value="veggie">Burguer veggie</option>
+      </select>
+
+      <div>
+        <h4>Elige tu pan 🍔</h4>
+        <input
+          type="radio"
+          value="normal"
+          id="normal-bread"
+          name="bread-type"
+          required
+        />
+        <label>Pan normal</label><br />
+        <input
+          type="radio"
+          value="cereal"
+          id="cereal-bread"
+          name="bread-type"
+          required
+        />
+        <label>Pan de cereales</label><br />
+        <input
+          type="radio"
+          value="brioche"
+          id="brioche-bread"
+          name="bread-type"
+          required
+        />
+        <label>Pan de brioche</label><br />
+      </div>
+
+      <div>
+        <h4>¿Qué complementos quieres 😋?</h4>
+
+        <input type="checkbox" value="bacon" id="topping-bacon" />
+        <label for="topping-bacon">Bacon</label><br />
+
+        <input type="checkbox" value="cheese" id="topping-cheese" />
+        <label for="topping-cheese">Queso</label><br />
+
+        <input type="checkbox" value="lettuce" id="topping-lettuce" />
+        <label for="topping-lettuce">Lechuga</label><br />
+
+        <input type="checkbox" value="avocado" id="topping-avocado" />
+        <label for="topping-avocado">Aguacate</label><br />
+      </div>
+
+      <button type="submit">Hacer pedido</button>
+    </form>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
