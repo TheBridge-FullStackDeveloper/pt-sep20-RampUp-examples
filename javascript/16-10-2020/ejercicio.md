@@ -11,12 +11,13 @@ Vamos a crear un HTML que tenga:
 
 ## Segundo paso
 
-- Al `div`principal le ponemos una `id` que sea `main`, y con CSS le ponemos `background-color` `pink`. Le ponemos también `color: white`.
+- Al `div`principal le ponemos una `id` que se llame `main`, y con CSS le ponemos `background-color` `pink`. Le ponemos también `color: white`.
 
 ```
 #main { 
   align-items: center;
   justify-content: space-between;
+  ...
 }
 ```
 

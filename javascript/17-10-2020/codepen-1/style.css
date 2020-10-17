@@ -1,0 +1,28 @@
+.blue-button {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  background-color: #317589;
+  border: 0;
+  border-radius: 0.25rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.blue-button:hover {
+  cursor: pointer;
+  background-color: #48929B;
+  border-bottom: 1px solid #317589;
+  border-right: 1px solid #317589;
+}
+
+.prompt-label {
+   font-size: 20px;
+  font-weight: bold;
+}
+
+#prompt-input {
+  padding: 0.5;
+  font-size: 20px;
+}
